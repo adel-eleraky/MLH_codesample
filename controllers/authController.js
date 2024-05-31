@@ -6,6 +6,8 @@ const AppError = require("../utils/appError.js")
 const { validationResult } = require("express-validator")
 const displayValidationErrors = require("./../utils/validationErrors");
 const sendResponse = require("../utils/sendResponse");
+const Email = require("./../utils/email")
+
 
 // signup user handler
 exports.signup = asyncHandler(async (req, res, next) => {
